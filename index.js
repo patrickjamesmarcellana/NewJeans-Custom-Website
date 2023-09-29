@@ -3,6 +3,9 @@ require('dotenv').config()
 
 const app = express()
 
+const router = require("./src/routes/routes.js")
+app.use("", router)
+
 app.use((err, req, res, next) => {
     console.error(err.stack)
     res.sendStatus(400)
