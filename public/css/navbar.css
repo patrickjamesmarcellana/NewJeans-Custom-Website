@@ -1,0 +1,16 @@
+.navbar-panel {
+    height: 90px;
+    border-bottom: solid 2px #3C3C3C;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-logo {
+    height: 52px;
+    width: 92px;
+    margin-left: 35px;
+    margin-top: 17px;
+    -webkit-filter: drop-shadow(0px 4px 4px #3C3C3C);
+    filter: drop-shadow(0px 4px 4px #3C3C3C)
+}
