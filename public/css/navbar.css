@@ -64,7 +64,6 @@
     cursor:pointer;
     filter: drop-shadow(-1px -1px 3px #3C3C3C);
     -webkit-filter: drop-shadow(-1px -1px 3px #3C3C3C);
-
 }
 
 .navbar-hamburger-sprite {
@@ -76,7 +75,7 @@
 }
 
 @media screen and (max-width:1000px) {
-    .navbar-button, .navbar-buttons-panel {
+    .navbar-button2, .navbar-buttons-panel {
         display: none;
     }
 
@@ -101,7 +100,7 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background-color: #d4e3ef;
+    background-image: url("../img/newjeans-background-main.png");
     transition: opacity 0.5s;
     opacity: 0;
 }
@@ -109,8 +108,14 @@
 .exit-button-sprite {
     height: 42px;
     width: 42px;
-    -webkit-filter: drop-shadow(-1px -1px 2px #3C3C3C);
     filter: drop-shadow(-1px -1px 2px #3C3C3C);
+    -webkit-filter: drop-shadow(-1px -1px 2px #3C3C3C);
+}
+
+.exit-button-sprite:hover {
+    cursor:pointer;
+    filter: drop-shadow(-1px -1px 3px #3C3C3C);
+    -webkit-filter: drop-shadow(-1px -1px 3px #3C3C3C);
 }
 
 .exit-button {
@@ -121,6 +126,6 @@
 
 .header {
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 2vw;
 }
