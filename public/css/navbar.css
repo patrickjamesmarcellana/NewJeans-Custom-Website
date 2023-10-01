@@ -9,15 +9,20 @@
     top: 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
+    align-items: center;
+}
+
+.navbar-logo-panel {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-logo {
     height: 52px;
     width: 92px;
-    margin-left: 35px;
-    margin-top: 17px;
+    margin-left: 2.5vw;
     -webkit-filter: drop-shadow(0px 4px 4px #3C3C3C);
-    filter: drop-shadow(0px 4px 4px #3C3C3C)
+    filter: drop-shadow(4px 4px 4px #3C3C3C)
 }
 
 .navbar-buttons-panel {
@@ -37,3 +42,39 @@
     filter: drop-shadow(0px 4px 6px #3C3C3C);
     text-decoration: underline;
 }
+
+.navbar-hamburger {
+    margin-left: auto;
+    margin-right: 2.5vw;
+    display: none;
+}
+
+.navbar-hamburger-sprite {
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(2px 4px 7px #3C3C3C);
+    -webkit-filter: drop-shadow(2px 4px 7px #3C3C3C);
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .navbar-button, .navbar-buttons-panel {
+        display: none;
+    }
+
+    .navbar-hamburger-sprite, .navbar-hamburger {
+        display: flex;
+    }
+
+    .navbar-logo-panel {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-logo {
+        margin-left: 0;
+        margin-right: 2vw;
+    }
+}
+
