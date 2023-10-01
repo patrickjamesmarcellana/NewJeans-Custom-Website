@@ -10,6 +10,7 @@
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
+    background-image: url("../img/newjeans-background-main.png");
 }
 
 .navbar-logo-panel {
@@ -40,7 +41,7 @@
 
 .navbar-button {
     margin-right: 2.5vw;
-    font-size: 15px;
+    font-size: 16px;
     color: #3C3C3C;
 }
 

@@ -19,14 +19,14 @@ $(".navbar-button3").mouseenter((e) => {
     const element_id = e.currentTarget.closest('.navbar-button').getAttribute("id")
     $("#" + element_id).css("transition-duration", "1s")
     $("#" + element_id).css("-webkit-transition-duration", "1s")
-    $("#" + element_id).css("font-size", "18px")
+    $("#" + element_id).css("font-size", "19px")
 })
 
 $(".navbar-button3").mouseleave((e) => {
     const element_id = e.currentTarget.closest('.navbar-button').getAttribute("id")
     $("#" + element_id).css("transition-duration", "1s")
     $("#" + element_id).css("-webkit-transition-duration", "1s")
-    $("#" + element_id).css("font-size", "15px")
+    $("#" + element_id).css("font-size", "16px")
 })
 
 $(".navbar-button2").mouseenter((e) => {

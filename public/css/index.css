@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300;900&display=swap');
 @font-face {
     font-family: Genty;
     src: url(../fonts/GentyDemo-Regular.ttf);
@@ -7,19 +7,53 @@
 
 body {
     margin: 0;
-    background-image: url("../img/newjeans-background-main.png");
-    background-repeat: no-repeat;
+    background-color: #b4d5ec;
+    width: 100vw;
+    overflow-x: hidden
 }
 
-.content {
+@keyframes fade-in {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+.about-panel-photo {
+    width: 100%;
+    animation: 2s ease-out 0s 1 fade-in;
+}
+
+.about-panel {
+    height: 500px;
     box-sizing: border-box;
-    padding: 2.5vw 5vw;
+    padding: 40px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-panel-header {
+    font-family: Genty;
+    font-size: 60px;
+    margin: 0px auto;
+    color: #3c3c3c
+}
+
+.about-panel-content {
+    font-family: "Poppins", "sans-serif";
+    font-size: 18px;
+    text-align: justify;
+    animation: 2s ease-out 0s 1 fade-in;
 }
 
 .members-panel-header {
-    font-family: "Genty";
-    font-size: 45px;
+    font-family: "Poppins", "sans-serif";
+    font-size: 35px;
     color: #3c3c3c;
+    font-weight: 300;
+    margin-right: 10px;
 }
 
 .members-panel-box {
