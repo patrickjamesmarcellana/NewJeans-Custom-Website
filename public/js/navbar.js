@@ -24,7 +24,17 @@ $(".navbar-button").mouseleave((e) => {
 
 // click event listener for hamburger
 $(".navbar-hamburger").click(() => {
-    $(".menu-modal").css("display", "block")
+    $(".menu-modal").css("opacity", "1")
     $(".navbar-panel").css("display", "none")
     $(".content").css("display", "none")
 })
+
+// event listener for window resize
+function adjust_window() {
+    if(window.visualViewport.width > 1000) {
+        $(".menu-modal").css("opacity", "0")
+        $(".navbar-panel").css("display", "flex")
+        $(".content").css("display", "flex")
+    }
+}
+window.onresize = adjust_window
