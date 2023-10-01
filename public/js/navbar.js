@@ -55,7 +55,6 @@ function adjust_window() {
     if(window.visualViewport.width > 1000) {
         $(".menu-modal").css("opacity", "0")
         $(".navbar-panel").css("display", "flex")
-        $(".content").css("display", "flex")
     }
 }
 window.onresize = adjust_window

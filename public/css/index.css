@@ -1,7 +1,29 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300&display=swap');
+@font-face {
+    font-family: Genty;
+    src: url(../fonts/GentyDemo-Regular.ttf);
+}
 
 body {
     margin: 0;
     background-image: url("../img/newjeans-background-main.png");
     background-repeat: no-repeat;
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 2.5vw 5vw;
+}
+
+.members-panel-header {
+    font-family: "Genty";
+    font-size: 45px;
+    color: #3c3c3c;
+}
+
+.members-panel-box {
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
 }

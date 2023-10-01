@@ -3,7 +3,7 @@
 
 .navbar-panel {
     height: 90px;
-    border-bottom: solid 2px #3C3C3C;
+    border-bottom: solid 2px hsl(0, 0%, 44%);
     width: 100vw;
     position: sticky;
     top: 0;
