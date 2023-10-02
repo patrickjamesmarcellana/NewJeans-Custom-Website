@@ -108,6 +108,10 @@ body {
     visibility: hidden;
 }
 
+.member-photo:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
     .members-list {
         flex-direction: column;
@@ -117,4 +121,10 @@ body {
     .member {
         margin-bottom: 2vw;
     }
+}
+
+
+.discography-panel-photo {
+    width: 100%;
+/*    visibility: hidden;*/
 }
