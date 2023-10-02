@@ -29,6 +29,11 @@ function apply_animation(element, animation, settings) {
 
 apply_animation(first_photo, { transform: ['scale(2)', 'scale(1)'] },
 { duration: 1000, fill: 'forwards', easing: 'ease-out' })
+apply_animation(header_element, { transform: ['translateX(-400%)', 'translateX(0)'] }, 
+{ duration: 500, fill: 'forwards', easing: 'ease-out' })
+apply_animation(content_element, { transform: ['translateX(400%)', 'translateX(0)']}, 
+{ duration: 500, fill: 'forwards', easing: 'ease-out' })
+
 
 $(window).scroll((e) => {
     apply_animation(first_photo, { transform: ['scale(2)', 'scale(1)'] },
@@ -38,6 +43,6 @@ $(window).scroll((e) => {
     apply_animation(content_element, { transform: ['translateX(400%)', 'translateX(0)']}, 
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
     apply_animation(second_photo, { opacity: ['0', '1'] },
-    { duration: 2000, fill: 'forwards', easing: 'ease-out' })
+    { duration: 1500, fill: 'forwards', easing: 'ease-out' })
 
 })

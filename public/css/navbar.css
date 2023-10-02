@@ -3,15 +3,15 @@
 
 .navbar-panel {
     height: 90px;
-    border-bottom: solid 2px hsl(0, 0%, 44%);
+    border-bottom: solid 1.5px hsl(0, 0%, 44%);
+    background-color: #b4d5ec;
     width: 100vw;
     position: sticky;
     top: 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
-    background-image: url("../img/newjeans-background-main.png");
-    z-index: 500;
+    z-index: 50;
     padding-right: 13px;
     box-sizing: border-box;
 }
@@ -104,9 +104,13 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background-image: url("../img/newjeans-background-main.png");
-    transition: opacity 0.5s;
-    opacity: 0;
+    background-color: #b4d5ec;
+    display: none;
+    z-index: 600;
+    position: fixed;
+    top: 0;
+    padding-right: 13px;
+    box-sizing: border-box;
 }
 
 .exit-button-sprite {
