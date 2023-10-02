@@ -16,18 +16,8 @@ body {
     overflow: hidden;
 }
 
-@keyframes fade-in {
-    0% {
-        transform: scale(2)
-    }
-    100% {
-        transform: scale(1)
-    }
-}
-
-.panel-photo {
+.about-panel-photo {
     width: 100%;
-    animation: 2s ease-out 0s 1 fade-in;
 }
 
 .about-panel {
@@ -49,5 +39,10 @@ body {
     font-family: "Poppins", "sans-serif";
     font-size: 18px;
     text-align: justify;
-    animation: 2s ease-out 0s 1 fade-in;
+    visibility: hidden;
+}
+
+.members-panel-photo {
+    width: 100%;
+    visibility: hidden;
 }
