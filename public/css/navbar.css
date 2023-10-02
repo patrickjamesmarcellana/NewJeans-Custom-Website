@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     background-image: url("../img/newjeans-background-main.png");
+    z-index: 500;
 }
 
 .navbar-logo-panel {

@@ -12,16 +12,20 @@ body {
     overflow-x: hidden
 }
 
+.content {
+    overflow: hidden;
+}
+
 @keyframes fade-in {
     0% {
-      opacity: 0%;
+        transform: scale(2)
     }
     100% {
-      opacity: 100%;
+        transform: scale(1)
     }
 }
 
-.about-panel-photo {
+.panel-photo {
     width: 100%;
     animation: 2s ease-out 0s 1 fade-in;
 }
@@ -46,18 +50,4 @@ body {
     font-size: 18px;
     text-align: justify;
     animation: 2s ease-out 0s 1 fade-in;
-}
-
-.members-panel-header {
-    font-family: "Poppins", "sans-serif";
-    font-size: 35px;
-    color: #3c3c3c;
-    font-weight: 300;
-    margin-right: 10px;
-}
-
-.members-panel-box {
-    background-color: white;
-    height: 300px;
-    border-radius: 10px;
 }
