@@ -12,6 +12,8 @@
     align-items: center;
     background-image: url("../img/newjeans-background-main.png");
     z-index: 500;
+    padding-right: 13px;
+    box-sizing: border-box;
 }
 
 .navbar-logo-panel {

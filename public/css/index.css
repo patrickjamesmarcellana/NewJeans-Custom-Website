@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: #b4d5ec;
     width: 100vw;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .content {
@@ -21,9 +21,8 @@ body {
 }
 
 .about-panel {
-    height: 500px;
     box-sizing: border-box;
-    padding: 40px 120px;
+    padding: 3vw 10vw 5vw 10vw;
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +31,9 @@ body {
     font-family: Genty;
     font-size: 60px;
     margin: 0px auto;
-    color: #3c3c3c
+    color: #3c3c3c;
+    box-sizing: border-box;
+    padding-right: 13px;
 }
 
 .about-panel-content {
@@ -40,9 +41,28 @@ body {
     font-size: 18px;
     text-align: justify;
     visibility: hidden;
+    color: #3c3c3c;
+    box-sizing: border-box;
+    padding-right: 13px;
 }
 
 .members-panel-photo {
     width: 100%;
     visibility: hidden;
+}
+
+.members-panel {
+    height: 500px;
+    box-sizing: border-box;
+    padding: 3vw 10vw 5vw 10vw;
+    display: flex;
+}
+
+.members-panel-header {
+    font-family: Genty;
+    font-size: 60px;
+    margin: 0px auto;
+    color: #3c3c3c;
+    padding-right: 13px;
+    box-sizing: border-box;
 }
