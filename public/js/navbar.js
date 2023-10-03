@@ -45,8 +45,8 @@ $(".navbar-button2").mouseleave((e) => {
 
 // click event listener for hamburger
 $(".navbar-hamburger").click(() => {
-    $(".menu-modal").css("display", "block")
-    $(".menu-modal").animate({ opacity: ['0', '1'] },{ duration: 1500, fill: 'forwards', easing: 'ease-out' })
+    $(".menu-modal").css("visibility", "visible")
+    $(".menu-modal").animate({ transform: ['translateX(400%)', 'translateX(0)'] },{ duration: 3000, fill: 'forwards', easing: 'ease-out' })
 })
 
 // event listener for window resize
@@ -59,5 +59,5 @@ window.onresize = adjust_window
 
 // click event listener for menu exit button
 $(".exit-button").click(() => {
-    $(".menu-modal").css("display", "none")
+    $(".menu-modal").animate({ transform: ['translateX(0)', 'translateX(400%)'] },{ duration: 3000, fill: 'forwards', easing: 'ease-out' })
 })

@@ -105,7 +105,7 @@
     width: 100vw;
     position: absolute;
     background-color: #b4d5ec;
-    display: none;
+    visibility: hidden;
     z-index: 600;
     position: fixed;
     top: 0;
