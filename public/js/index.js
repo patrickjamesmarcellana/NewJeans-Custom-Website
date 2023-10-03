@@ -101,6 +101,6 @@ if (isMobileDevice) {
     $(".members-panel").css("padding-right", "0")
     $(".members-panel-header").css("padding-right", "0.1em")
     $(".navbar-panel").css("padding-right", "0")
-    $(".menu-modal").css("padding-right", "0")
+    $(".menu-modal").css("padding-right", "0px")
     $(".members-list").css("padding-right", "0")
 }
