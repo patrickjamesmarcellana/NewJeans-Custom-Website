@@ -41,12 +41,12 @@ function apply_animation(element, animation, settings) {
     }
 }
 
-apply_animation(first_photo, { transform: ['scale(2)', 'scale(1)'], opacity: ['0', '1'] },
-{ duration: 1000, fill: 'forwards', easing: 'ease-out' })
+apply_animation(first_photo, { transform: ['translateX(400%)', 'translateX(0)'], opacity: ['0', '1'] },
+{ duration: 500, fill: 'forwards', easing: 'ease-out' })
 
 
 $(window).on('scroll', () => {
-    apply_animation(first_photo, { transform: ['scale(2)', 'scale(1)'], opacity: ['0', '1'] },
+    apply_animation(first_photo, { transform: ['translateX(400%)', 'translateX(0)'], opacity: ['0', '1'] },
     { duration: 1000, fill: 'forwards', easing: 'ease-out' })
     apply_animation(header_element, { transform: ['translateX(-400%)', 'translateX(0)'] }, 
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
@@ -96,8 +96,8 @@ it returns boolean value*/
 let isMobileDevice = regexp.test(details);
   
 if (isMobileDevice) {
-    $(".about-panel-header").css("padding-right", "0")
-    $(".about-panel-content").css("padding-right", "0")
+    $(".about-panel-header").css("padding-right", "2em")
+    $(".about-panel-content").css("padding-right", "2em")
     $(".members-panel").css("padding-right", "0")
     $(".members-panel-header").css("padding-right", "0")
     $(".navbar-panel").css("padding-right", "0")
