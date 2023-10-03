@@ -45,8 +45,12 @@ $(".navbar-button2").mouseleave((e) => {
 
 // click event listener for hamburger
 $(".navbar-hamburger").click(() => {
-    $(".menu-modal").css("visibility", "visible")
-    $(".menu-modal").animate({ transform: ['translateX(400%)', 'translateX(0)'] },{ duration: 3000, fill: 'forwards', easing: 'ease-out' })
+    $(".menu-modal").css("display", "block")
+    setTimeout(function() {
+        $(".menu-modal").css('opacity', '1')
+        $(".menu-modal").css('transform', 'translateY(0)')
+    }, 10);
+    // $(".menu-modal").animate({ transform: ['translateY(-30%)', 'translateY(0)'], opacity: ['0', '1']},{ duration: 2000, fill: 'forwards', easing: 'ease-out' })
 })
 
 // event listener for window resize
@@ -59,5 +63,12 @@ window.onresize = adjust_window
 
 // click event listener for menu exit button
 $(".exit-button").click(() => {
-    $(".menu-modal").animate({ transform: ['translateX(0)', 'translateX(400%)'] },{ duration: 3000, fill: 'forwards', easing: 'ease-out' })
+    setTimeout(function() {
+        $(".menu-modal").css('opacity', '0')
+        $(".menu-modal").css('transform', 'translateY(-30%)')
+    }, 10);
+    setTimeout(() => {
+        $(".menu-modal").css("display", "none")
+    }, 100)
+    
 })

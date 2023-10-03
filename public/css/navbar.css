@@ -105,12 +105,15 @@
     width: 100vw;
     position: absolute;
     background-color: #b4d5ec;
-    visibility: hidden;
     z-index: 600;
     position: fixed;
     top: 0;
     padding-right: 13px;
     box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: opacity 0.5s, transform 0.5s;
+    display: none;
 }
 
 .exit-button-sprite {
