@@ -32,6 +32,11 @@ for(let x = 0; x < 5; x++) {
     })
 }
 
+const discography_panel_photo = {
+    element: document.querySelector(".discography-panel-photo"),
+    already_seen: false
+}
+
 function apply_animation(element, animation, settings) {
     const bounding = element.element.getBoundingClientRect();
     if (!element.already_seen && bounding.top + (bounding.height / 2) > 0 && bounding.left + (bounding.width/2) > 0 && bounding.left + (bounding.width/2) < (window.innerWidth || document.documentElement.clientWidth) && bounding.top + (bounding.height / 2) < (window.innerHeight || document.documentElement.clientHeight)) {
@@ -41,27 +46,30 @@ function apply_animation(element, animation, settings) {
     }
 }
 
-apply_animation(first_photo, { transform: ['translateX(400%)', 'translateX(0)'], opacity: ['0', '1'] },
-{ duration: 500, fill: 'forwards', easing: 'ease-out' })
+apply_animation(first_photo, { transform: ['translateX(400%)', 'translateX(0)'] },
+{ duration: 1000, fill: 'forwards', easing: 'ease-out' })
 
 
 $(window).on('scroll', () => {
-    apply_animation(first_photo, { transform: ['translateX(400%)', 'translateX(0)'], opacity: ['0', '1'] },
-    { duration: 1000, fill: 'forwards', easing: 'ease-out' })
+    apply_animation(first_photo, { transform: ['translateX(400%)', 'translateX(0)'] },
+    { duration: 500, fill: 'forwards', easing: 'ease-out' })
     apply_animation(header_element, { transform: ['translateX(-400%)', 'translateX(0)'] }, 
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
     apply_animation(content_element, { transform: ['translateX(400%)', 'translateX(0)']}, 
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
-    apply_animation(second_photo, { opacity: ['0', '1'] },
-    { duration: 1000, fill: 'forwards', easing: 'ease-out' })
+    apply_animation(second_photo, { transform: ['translateX(-400%)', 'translateX(0)'] },
+    { duration: 500, fill: 'forwards', easing: 'ease-out' })
 
     /* Members Part Animations */
     apply_animation(members_header, { transform: ['translateX(400%)', 'translateX(0)']}, 
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
     for(let x = 0; x < 5; x++) {
         apply_animation(members_arr[x], { transform: ['translateY(-30%)', 'translateY(0)'], opacity: ['0', '1']}, 
-        { duration: 1500, fill: 'forwards', easing: 'ease-out' })
+        { duration: 1000, fill: 'forwards', easing: 'ease-out' })
     }
+
+    apply_animation(discography_panel_photo, { transform: ['translateX(400%)', 'translateX(0)'] },
+    { duration: 500, fill: 'forwards', easing: 'ease-out' })
 })
 
 /* Members Photo Hover Effect */

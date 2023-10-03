@@ -50,7 +50,6 @@ $(".navbar-hamburger").click(() => {
         $(".menu-modal").css('opacity', '1')
         $(".menu-modal").css('transform', 'translateY(0)')
     }, 10);
-    // $(".menu-modal").animate({ transform: ['translateY(-30%)', 'translateY(0)'], opacity: ['0', '1']},{ duration: 2000, fill: 'forwards', easing: 'ease-out' })
 })
 
 // event listener for window resize
@@ -70,5 +69,4 @@ $(".exit-button").click(() => {
     setTimeout(() => {
         $(".menu-modal").css("display", "none")
     }, 100)
-    
 })

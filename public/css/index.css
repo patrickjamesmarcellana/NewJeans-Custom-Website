@@ -18,6 +18,7 @@ body {
 
 .about-panel-photo {
     width: 100%;
+    visibility: hidden;
 }
 
 .about-panel {
@@ -137,5 +138,5 @@ body {
 
 .discography-panel-photo {
     width: 100%;
-/*    visibility: hidden;*/
+    visibility: hidden;
 }

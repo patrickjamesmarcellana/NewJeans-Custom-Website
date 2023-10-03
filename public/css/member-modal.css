@@ -5,26 +5,62 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
-    display: none;
     z-index: 600;
     position: fixed;
     top: 0;
     padding-right: 13px;
     box-sizing: border-box;
     align-items: center;
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: opacity 0.5s, transform 0.5s;
+    display: none;
 }
 
 .main-box {
-    height: 60vw;
-    width: 90vw;
+    height: 65vw;
+    width: 100vw;
     background-image: url("../img/newjeans-background-main.png");
     margin: auto;
-    max-width: 900px;
-    max-height: 600px;
+    max-width: 1000px;
+    max-height: 650px;
+    box-shadow: 0px 8px 16px 0px #3C3C3C;
 }
 
 .member-modal-header {
     display: flex;
     margin-top: 20px;
     margin-right: 1vw;
+}
+
+.member-modal-content {
+    box-sizing: border-box;
+    padding: 0vw 5vw 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-modal-name {
+    font-family: Genty;
+    font-size: 4.5rem;
+    color: #3c3c3c;
+    box-sizing: border-box;
+    padding-right: 13px;
+    background-color: #ffbad2;
+    filter: drop-shadow(3px 3px 2px #3C3C3C);
+    -webkit-filter: drop-shadow(3px 3px 2px #3C3C3C);
+    background-image: linear-gradient(to bottom, #FFFFFF, #ff79a8);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding-left: 0.2em;
+    margin: auto;
+}
+
+.member-modal-picture {
+    max-width: 45%;
+    box-shadow: 0px 8px 16px 0px #3C3C3C;
 }
