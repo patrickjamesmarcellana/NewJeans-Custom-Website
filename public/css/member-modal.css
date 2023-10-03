@@ -18,18 +18,18 @@
 }
 
 .main-box {
-    height: 65vw;
-    width: 100vw;
+    height: 47vw;
+    width: 85vw;
     background-image: url("../img/newjeans-background-main.png");
     margin: auto;
-    max-width: 1000px;
-    max-height: 650px;
+    max-width: 850px;
+    max-height: 470px;
     box-shadow: 0px 8px 16px 0px #3C3C3C;
 }
 
 .member-modal-header {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.5vw;
     margin-right: 1vw;
 }
 
@@ -57,10 +57,63 @@
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     padding-left: 0.2em;
-    margin: auto;
+}
+
+.member-modal-body {
+    display: flex;
+    align-items:start;
 }
 
 .member-modal-picture {
     max-width: 45%;
     box-shadow: 0px 8px 16px 0px #3C3C3C;
+    min-width: 330px;
+}
+
+.member-modal-description {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    box-sizing: border-box;
+    padding-left: 3.5vw;
+}
+
+.desc-category {
+    font-family: "Poppins", "sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3vw;
+}
+
+.desc {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    .member-modal-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-modal-description {
+        padding-left: 0;
+        align-items: center;
+        width: 100%;
+        margin-top: 3.5vw;
+    }
+    
+    .member-modal-name {
+        font-size: 3.5rem;
+    }
+
+    .member-modal-picture {
+        max-width: 330px;
+    }
+
+    .main-box {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
