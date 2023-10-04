@@ -203,12 +203,12 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    .members-list {
+    .discography-list {
         flex-direction: column;
         align-items: center;
     }
 
-    .member {
+    .album {
         margin-bottom: 4vw;
     }
 }

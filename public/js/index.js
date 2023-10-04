@@ -111,6 +111,25 @@ $(".member").mouseleave((e) => {
     $("#" + element_id).css("filter", "none")
 })
 
+/* Albums Photo Hover Effect */
+$(".album").mouseenter((e) => {
+    const element_id = e.currentTarget.closest('.album').getAttribute("id")
+    $("#" + element_id).css("transition-duration", "1s")
+    $("#" + element_id).css("-webkit-transition-duration", "1s")
+    $("#" + element_id).css("transform", "scale(1.3)")
+    $("#" + element_id).css("z-index", "10")
+    $("#" + element_id).css("filter", "drop-shadow(4px 4px 8px #3C3C3C)")
+})
+
+$(".album").mouseleave((e) => {
+    const element_id = e.currentTarget.closest('.album').getAttribute("id")
+    $("#" + element_id).css("transition-duration", "1s")
+    $("#" + element_id).css("-webkit-transition-duration", "1s")
+    $("#" + element_id).css("transform", "scale(1)")
+    $("#" + element_id).css("z-index", "0")
+    $("#" + element_id).css("filter", "none")
+})
+
 /* Storing user's device details in a variable*/
 let details = navigator.userAgent;
   
