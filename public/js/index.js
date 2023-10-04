@@ -44,7 +44,7 @@ const discography_header = {
 
 const discography_elements = document.querySelectorAll(".album-photo")
 let discography_arr = []
-for(let x = 0; x < 3; x++) {
+for(let x = 0; x < 6; x++) {
     discography_arr.push({
         element: discography_elements[x],
         already_seen: false
@@ -86,7 +86,7 @@ $(window).on('scroll', () => {
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
     apply_animation(discography_header, { transform: ['translateX(-400%)', 'translateX(0)']}, 
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
-    for(let x = 0; x < 3; x++) {
+    for(let x = 0; x < 6; x++) {
         apply_animation(discography_arr[x], { transform: ['translateY(-30%)', 'translateY(0)'], opacity: ['0', '1']}, 
         { duration: 1000, fill: 'forwards', easing: 'ease-out' })
     }
@@ -152,6 +152,6 @@ if (isMobileDevice) {
     $(".members-list").css("padding-right", "0")
     $(".member-modal").css("padding-right", "0px")
     $(".album-modal").css("padding-right", "0px")
-    $(".album-main-box").css("border-radius", "0px")
-    $(".main-box").css("border-radius", "0px")
+    $(".album-main-box").css("border-radius", "0")
+    $(".main-box").css("border-radius", "0")
 }

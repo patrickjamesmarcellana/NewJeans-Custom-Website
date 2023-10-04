@@ -78,8 +78,8 @@ $(".member").click((e) => {
 
     $(".member-modal").css("display", "flex")
     setTimeout(function() {
-        $(".member-modal").css('opacity', '1')
-        $(".member-modal").css('transform', 'translateY(0)')
+        $(".main-box").css('opacity', '1')
+        $(".main-box").css('transform', 'translateY(0)')
     }, 10);
 
 })
@@ -87,8 +87,8 @@ $(".member").click((e) => {
 // click event listener for menu exit button
 $(".exit-button").click(() => {
     setTimeout(function() {
-        $(".member-modal").css('opacity', '0')
-        $(".member-modal").css('transform', 'translateY(-30%)')
+        $(".main-box").css('opacity', '0')
+        $(".main-box").css('transform', 'translateY(-30%)')
     }, 10);
     setTimeout(() => {
         $(".member-modal").css("display", "none")
@@ -98,8 +98,8 @@ $(".exit-button").click(() => {
 // exit on click outside the box
 $(".member-modal").click(() => {
     setTimeout(function() {
-        $(".member-modal").css('opacity', '0')
-        $(".member-modal").css('transform', 'translateY(-30%)')
+        $(".main-box").css('opacity', '0')
+        $(".main-box").css('transform', 'translateY(-30%)')
     }, 10);
     setTimeout(() => {
         $(".member-modal").css("display", "none")

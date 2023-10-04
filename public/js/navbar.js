@@ -9,10 +9,10 @@ $("#about-button-1").click(() => {
     document.querySelector(".about-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
 })
 $("#members-button-1").click(() => { 
-    document.querySelector(".members-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    document.querySelector(".members-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
 })
 $("#discography-button-1").click(() => { 
-    document.querySelector(".discography-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    document.querySelector(".discography-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
 })
 
 
@@ -37,7 +37,7 @@ $("#about-button-2").click(() => {
     }, 100)
 })
 $("#members-button-2").click(() => {
-    document.querySelector(".members-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    document.querySelector(".members-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
     setTimeout(function() {
         $(".menu-modal").css('opacity', '0')
         $(".menu-modal").css('transform', 'translateY(-30%)')
@@ -47,7 +47,7 @@ $("#members-button-2").click(() => {
     }, 100)
 })
 $("#discography-button-2").click(() => { 
-    document.querySelector(".discography-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    document.querySelector(".discography-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
     setTimeout(function() {
         $(".menu-modal").css('opacity', '0')
         $(".menu-modal").css('transform', 'translateY(-30%)')

@@ -48,8 +48,8 @@ $(".album").click((e) => {
 
     $(".album-modal").css("display", "flex")
     setTimeout(function() {
-        $(".album-modal").css('opacity', '1')
-        $(".album-modal").css('transform', 'translateY(0)')
+        $(".album-main-box").css('opacity', '1')
+        $(".album-main-box").css('transform', 'translateY(0)')
     }, 10);
 
 })
@@ -57,8 +57,8 @@ $(".album").click((e) => {
 // click event listener for menu exit button
 $(".album-exit-button").click(() => {
     setTimeout(function() {
-        $(".album-modal").css('opacity', '0')
-        $(".album-modal").css('transform', 'translateY(-30%)')
+        $(".album-main-box").css('opacity', '0')
+        $(".album-main-box").css('transform', 'translateY(-30%)')
     }, 10);
     setTimeout(() => {
         $(".album-modal").css("display", "none")
@@ -68,11 +68,11 @@ $(".album-exit-button").click(() => {
 // exit on click outside the box
 $(".album-modal").click(() => {
     setTimeout(function() {
-        $(".album-modal").css('opacity', '0')
+        $(".album-main-box").css('opacity', '0')
         $(".album-modal").css('transform', 'translateY(-30%)')
     }, 10);
     setTimeout(() => {
-        $(".album-modal").css("display", "none")
+        $(".album-main-box").css("display", "none")
     }, 100)
 })
 $(".album-main-box").click((e) => {
