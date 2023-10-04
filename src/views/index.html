@@ -9,12 +9,14 @@
         <link rel="stylesheet" type="text/css" media="all" href="static/css/index.css">
         <link rel="stylesheet" type="text/css" media="all" href="static/css/navbar.css">
         <link rel="stylesheet" type="text/css" media="all" href="static/css/member-modal.css">
+        <link rel="stylesheet" type="text/css" media="all" href="static/css/album-modal.css">
 
         <script src="static/js/code.jquery.com_jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="static/js/navbar.js" defer></script>
         <script src="static/js/index.js" defer></script>
         <script src="static/js/member-modal.js" defer></script>
+        <script src="static/js/album-modal.js" defer></script>
     </head>
     <body>
         <div class="menu-modal">
@@ -67,6 +69,19 @@
                         </span>
                     </div>
                     
+                </div>
+            </div>
+        </div>
+
+        <div class="album-modal">
+            <div class="album-main-box">
+                <div class="album-modal-header">
+                    <button class="exit-button album-exit-button">
+                        <img class="exit-button-sprite" src="static/img/newjeans-close-button.png">
+                    </button>
+                </div>
+                <div class="album-modal-content">
+                    <div class="album-modal-body"></div>
                 </div>
             </div>
         </div>
@@ -142,7 +157,7 @@
                 <div class="discography-panel-header">Discography</div>
                 <div class="discography-list">
                     <div id="nwjns" class="album">
-                        <img class="album-photo" src="static/img/newjeans-nwjns-cover.jpg" alt="1st EP 'New Jeans'" title="=1st EP 'New Jeans">
+                        <img class="album-photo" src="static/img/newjeans-nwjns-cover.jpg" alt="1st EP 'New Jeans'" title="1st EP 'New Jeans">
                         New Jeans
                     </div>
                     <div id="omg" class="album">
@@ -152,6 +167,21 @@
                     <div id="getup" class="album">
                         <img class="album-photo" src="static/img/newjeans-getup-cover.png" alt="2nd EP 'Get Up'" title="2nd EP 'Get Up'">
                         Super Shy
+                    </div>
+                </div>
+                <br>
+                <div class="discography-list">
+                    <div id="gods" class="album">
+                        <img class="album-photo" src="static/img/newjeans-gods-cover.jpg" alt="Gods, League of Legends" title="Gods, League of Legends">
+                        Gods
+                    </div>
+                    <div id="atcy" class="album">
+                        <img class="album-photo" src="static/img/newjeans-atcy-cover.jpg" alt="A Time Called You (OST)" title="A Time Called You (OST)">
+                        Beautiful Restriction
+                    </div>
+                    <div id="bwya" class="album">
+                        <img class="album-photo" src="static/img/newjeans-bwya-cover.jpg" alt="Be Who You Are (Real Magic)" title="Be Who You Are (Real Magic)">
+                        Be Who You Are
                     </div>
                 </div>
             </div>

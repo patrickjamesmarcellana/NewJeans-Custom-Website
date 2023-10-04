@@ -151,4 +151,7 @@ if (isMobileDevice) {
     $(".menu-modal").css("padding-right", "0px")
     $(".members-list").css("padding-right", "0")
     $(".member-modal").css("padding-right", "0px")
+    $(".album-modal").css("padding-right", "0px")
+    $(".album-main-box").css("border-radius", "0px")
+    $(".main-box").css("border-radius", "0px")
 }
