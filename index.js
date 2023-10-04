@@ -8,14 +8,6 @@ const app = express()
 // make public folder static
 app. use("/static", express.static("./public"))
 
-// related to handlebars
-app.engine("hbs", exphbs.engine({
-    extname: 'hbs'
-}))
-app.set("view engine", "hbs");
-app.set("views", "./src/views");
-app.set("view cache", false);
-
 // from this point onwards, we are going to receive json format data
 app.use(express.json());
 
