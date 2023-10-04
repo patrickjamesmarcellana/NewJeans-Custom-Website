@@ -1,18 +1,62 @@
 // click action listeners for navbar buttons
-$(".navbar-logo").click(() => { window.location.href = "/" })
-$("#home-button-1").click(() => { window.location.href = "/" })
-$("#members-button-1").click(() => { window.location.href = "/members" })
-$("#discography-button-1").click(() => { window.location.href = "/discography" })
-$("#awards-button-1").click(() => { window.location.href = "/awards" })
-$("#performances-button-1").click(() => { window.location.href = "/performances" })
-$("#gallery-button-1").click(() => { window.location.href = "/gallery" })
+$(".navbar-logo").click(() => {
+    window.location.href = "/" 
+})
+$("#home-button-1").click(() => { 
+    $('html, body').animate({scrollTop:0}, 'slow');
+})
+$("#about-button-1").click(() => { 
+    document.querySelector(".about-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+})
+$("#members-button-1").click(() => { 
+    document.querySelector(".members-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+})
+$("#discography-button-1").click(() => { 
+    document.querySelector(".discography-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+})
 
-$("#home-button-2").click(() => { window.location.href = "/" })
-$("#members-button-2").click(() => { window.location.href = "/members" })
-$("#discography-button-2").click(() => { window.location.href = "/discography" })
-$("#awards-button-2").click(() => { window.location.href = "/awards" })
-$("#performances-button-2").click(() => { window.location.href = "/performances" })
-$("#gallery-button-2").click(() => { window.location.href = "/gallery" })
+
+$("#home-button-2").click(() => { 
+    $('html, body').animate({scrollTop:0}, 'slow');
+    setTimeout(function() {
+        $(".menu-modal").css('opacity', '0')
+        $(".menu-modal").css('transform', 'translateY(-30%)')
+    }, 10);
+    setTimeout(() => {
+        $(".menu-modal").css("display", "none")
+    }, 100)
+})
+$("#about-button-2").click(() => { 
+    document.querySelector(".about-panel-header").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    setTimeout(function() {
+        $(".menu-modal").css('opacity', '0')
+        $(".menu-modal").css('transform', 'translateY(-30%)')
+    }, 10);
+    setTimeout(() => {
+        $(".menu-modal").css("display", "none")
+    }, 100)
+})
+$("#members-button-2").click(() => {
+    document.querySelector(".members-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    setTimeout(function() {
+        $(".menu-modal").css('opacity', '0')
+        $(".menu-modal").css('transform', 'translateY(-30%)')
+    }, 10);
+    setTimeout(() => {
+        $(".menu-modal").css("display", "none")
+    }, 100)
+})
+$("#discography-button-2").click(() => { 
+    document.querySelector(".discography-panel-photo").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" }) 
+    setTimeout(function() {
+        $(".menu-modal").css('opacity', '0')
+        $(".menu-modal").css('transform', 'translateY(-30%)')
+    }, 10);
+    setTimeout(() => {
+        $(".menu-modal").css("display", "none")
+    }, 100)
+})
+
 
 // hover event listener for navbar-buttons
 $(".navbar-button3").mouseenter((e) => {
