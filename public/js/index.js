@@ -37,6 +37,20 @@ const discography_panel_photo = {
     already_seen: false
 }
 
+const discography_header = {
+    element: document.querySelector(".discography-panel-header"),
+    already_seen: false
+}
+
+const discography_elements = document.querySelectorAll(".album-photo")
+let discography_arr = []
+for(let x = 0; x < 3; x++) {
+    discography_arr.push({
+        element: discography_elements[x],
+        already_seen: false
+    })
+}
+
 function apply_animation(element, animation, settings) {
     const bounding = element.element.getBoundingClientRect();
     if (!element.already_seen && bounding.top + (bounding.height / 2) > 0 && bounding.left + (bounding.width/2) > 0 && bounding.left + (bounding.width/2) < (window.innerWidth || document.documentElement.clientWidth) && bounding.top + (bounding.height / 2) < (window.innerHeight || document.documentElement.clientHeight)) {
@@ -70,6 +84,12 @@ $(window).on('scroll', () => {
 
     apply_animation(discography_panel_photo, { transform: ['translateX(400%)', 'translateX(0)'] },
     { duration: 500, fill: 'forwards', easing: 'ease-out' })
+    apply_animation(discography_header, { transform: ['translateX(-400%)', 'translateX(0)']}, 
+    { duration: 500, fill: 'forwards', easing: 'ease-out' })
+    for(let x = 0; x < 3; x++) {
+        apply_animation(discography_arr[x], { transform: ['translateY(-30%)', 'translateY(0)'], opacity: ['0', '1']}, 
+        { duration: 1000, fill: 'forwards', easing: 'ease-out' })
+    }
 })
 
 /* Members Photo Hover Effect */
